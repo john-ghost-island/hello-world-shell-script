@@ -3,7 +3,13 @@ pipeline {
   stages {
     stage('check') {
       steps {
-        sh 'sh hello-world.sh'
+        sh 'ls'
+      }
+    }
+
+    stage('df ') {
+      steps {
+        sh 'df -h'
       }
     }
 
